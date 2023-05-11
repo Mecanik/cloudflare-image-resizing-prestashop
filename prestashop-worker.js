@@ -28,7 +28,7 @@ const IMAGE_LAZY_LOAD = true;
 // DO NOT EDIT BELOW THIS LINE.
 
 // Classic
-const SrcClassic = '(https?:\\/\\/(?:www\\.|(?!www)).*?|\\/\\/.*?)((?:\\/modules\\/ps_imageslider\\/images\\/|\\/\\d+-(?:cart_default|small_default|medium_default|home_default|large_default|category_default|stores_default)\\/|\\/modules\\/ps_banner\\/img\\/|\\/img\\/).*?\\.(?:jpe?g|gif|png|webp|svg))(.*?)';
+const SrcClassic = '(https?:\\/\\/(?:www\\.|(?!www))[^/]*)(\\/(?:\\d+-home_default|c\\/\\d+-(?:cart_default|small_default|medium_default|home_default|large_default|category_default|stores_default)|modules\\/ps_imageslider\\/images\\/|modules\\/ps_banner\\/img\\/|img\\/).*?\\.(?:jpe?g|gif|png|webp|svg))(.*?)';
 const rgxSrcClassic = new RegExp(`${SrcClassic}`, 'g');
 
 // ETS themes 
